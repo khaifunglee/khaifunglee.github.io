@@ -25,7 +25,7 @@ const font = "'Montserrat', 'Segoe UI', sans-serif";
 
 const PROJECTS = [
   {
-    name: "Dishcision",
+    name: "Dishcision test",
     meta: "Pantry Tracker & Recipe Matcher · Mobile App",
     desc:
       "Track your pantry with automatic expiry labelling, match recipes to what you already own, and see how much you've saved. REST APIs on Spring Boot with PostgreSQL and Gmail SMTP authentication; Expo navigation keeps every page within 2 clicks.",
