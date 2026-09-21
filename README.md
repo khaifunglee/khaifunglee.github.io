@@ -4,4 +4,4 @@ This repository showcases my portfolio website with a React + Vite framework, de
 
 ## Link
 
-[@Khai Fung's Portfolio](https://khaifunglee.github.io)
+[Khai Fung's Portfolio](https://khaifunglee.github.io)

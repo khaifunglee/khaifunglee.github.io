@@ -6,7 +6,7 @@ import profilePic from "./assets/profPic.jpg"
 import miniSIEM from "./assets/project-miniSIEMdashboard.png"
 import bvDemo from "./assets/project-bv-demo.mov"
 import dishcisionDemo from "./assets/project-dishcision-demo.MP4"
-import cv from "./assets/cvMay2026.pdf"
+import cv from "./assets/cvSep2026.pdf"
 
 // ---------------------------------------------------------------
 // Lee Khai Fung — Portfolio v2 (Simplefolio-inspired)
@@ -29,7 +29,7 @@ const PROJECTS = [
     name: "Dishcision",
     meta: "Pantry Tracker & Recipe Matcher · Mobile App",
     desc:
-      "Track your pantry with automatic expiry labelling, match recipes to what you already own, and see how much you've saved. REST APIs on Spring Boot with PostgreSQL and Gmail SMTP authentication; Expo navigation keeps every page within 2 clicks.",
+      "Track your pantry with automatic expiry labelling, match recipes to what you already own, and see how much you've saved. REST APIs on Spring Boot with PostgreSQL and Gmail SMTP authentication; Expo navigation makes every page accessible within 2 clicks.",
     stack: ["React Native", "Expo", "Spring Boot", "PostgreSQL"],
     live: "#", // placeholder — swap in demo URL when deployed
     livePlaceholder: true,
@@ -40,7 +40,7 @@ const PROJECTS = [
     name: "Therapeutic Mental Health Tool",
     meta: "Braver Ventures · Tech Lead, team of 5",
     desc:
-      "A clinician platform for assigning personalised exercises and reviewing client journals — with calendar integration (Google & Outlook) and AI-powered client insights. Redesigned navigation so every core feature is within 2 clicks. Showcased at the Endeavour Exhibition.",
+      "A clinician platform for assigning personalised exercises and reviewing client journals with calendar integration (Google & Outlook) and AI-powered client insights. Showcased at the Endeavour Exhibition.",
     stack: ["React", "Spring Boot", "MySQL", "AWS", "LLM APIs"],
     live: null,
     code: "#",
@@ -60,6 +60,11 @@ const PROJECTS = [
 ];
 
 const EXPERIENCE = [
+    {
+    role: "Cybersecurity Intern — Centelon Solutions",
+    period: "Aug 2026 - Present",
+    desc: "Investigated and triaged 200+ alerts per week in Microsoft Sentinel and Trend Micro Vision One as a Level 1 SOC Analyst",
+  },
   {
     role: "Full Stack Developer Intern — Braver Ventures",
     period: "Jul – Nov 2025",
@@ -70,16 +75,12 @@ const EXPERIENCE = [
     period: "Mar – Jun 2025",
     desc: "Delivered 6 strategic recommendations; identified 3 digital outreach channels and a roadmap to 1.4M eligible clients via Python web scraping and Excel analysis.",
   },
-  {
-    role: "Assistant Sponsorship Director — Malaysians of Melbourne University",
-    period: "2022 – 2023",
-    desc: "Led a team of 10; secured 70+ FnB and 11 corporate sponsors, raising $5,000+ in contributions.",
-  },
 ];
 
 const SKILLS = [
-  "Java", "JavaScript", "TypeScript", "Python", "SQL", "React", "React Native",
-  "Spring Boot", "AWS", "Docker", "MySQL", "PostgreSQL", "ELK Stack", "Linux", "Git",
+  "Java", "JavaScript", "TypeScript", "Python", "SQL", "KQL", "React", "React Native",
+  "Spring Boot", "Microsoft Sentinel", "Trend Micro Vision One", "AWS", "Docker", "MySQL", 
+  "PostgreSQL", "ELK Stack", "Linux", "Git",
 ];
 
 // ------------------------- animations ---------------------------
@@ -329,15 +330,15 @@ export default function Portfolio() {
             <Reveal className="md:col-span-3" delay={250}>
               <div className="text-white">
                 <p className="leading-relaxed pb-6 text-left" style={{ fontSize: "1.1rem" }}>
-                  I'm a fresh Master of IT graduate from the University of Melbourne,
-                  specialised in cybersecurity, with hands-on experience across full-stack
-                  development, consulting, and security-focused projects, from developing a
+                  I'm a Master of IT graduate from the University of Melbourne,
+                  specialising in cybersecurity. From developing a
                   clinician-facing platform as Tech Lead to building my own SIEM pipeline
-                  and reproducing real vulnerabilities.
+                  and reproducing real vulnerabilities, I have hands-on experience across full-stack
+                  development, cybersecurity, and consulting. 
                 </p>
                 <p className="leading-relaxed pb-6 text-left" style={{ fontSize: "1.1rem", opacity: 0.92 }}>
                   Backed by a Bachelor of Commerce (Economics & Finance), I bring commercial
-                  thinking to technical work. Google Cybersecurity certified; Currently learning CompTIA A+.
+                  thinking to technical work. Google Cybersecurity certified; Currently building hobby-driven projects such as a Pokemon Binder Designer mobile app.
                 </p>
                 <div className="flex flex-wrap gap-1.5 mb-8">
                   {SKILLS.map((s) => (
@@ -357,8 +358,41 @@ export default function Portfolio() {
         </div>
       </section>
 
+      {/* ---------------- experience ---------------- */}
+      <section id="experience" className="px-6 py-20" style={{ background: "#F7FBFA" }}>
+        <div className="max-w-3xl mx-auto">
+          <Reveal>
+            <h1 className="text-center text-3xl md:text-4xl font-extrabold mb-14" style={{ fontWeight: 800, color: DARK }}>
+              Experience
+            </h1>
+          </Reveal>
+          <div className="flex flex-col gap-8">
+            {EXPERIENCE.map((e, i) => (
+              <Reveal key={e.role} delay={i * 120}>
+                <div
+                  className="rounded-xl p-6 bg-white"
+                  style={{ boxShadow: "0 6px 24px rgba(2,170,176,0.08)", borderLeft: `4px solid ${TEAL}` }}
+                >
+                  <div className="flex flex-wrap items-baseline justify-between gap-2 mb-2">
+                    <h3 className="font-extrabold" style={{ color: DARK }}>{e.role}</h3>
+                    <span className="text-sm font-semibold" style={{ color: TEAL }}>{e.period}</span>
+                  </div>
+                  <p className="text-sm leading-relaxed" style={{ color: GREY }}>{e.desc}</p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+          <Reveal delay={200}>
+            <p className="text-center text-md pt-8" style={{ color: GREY }}>
+              <strong style={{ color: DARK }}>Education:</strong> Master of IT — Cybersecurity (WAM 79.2) ·
+              Bachelor of Commerce — Economics & Finance (WAM 81.7), The University of Melbourne
+            </p>
+          </Reveal>
+        </div>
+      </section>
+
       {/* ---------------- projects ---------------- */}
-      <section id="projects" className="px-6 py-20 md:py-24" style={{ background: "#fff" }}>
+      <section id="projects" className="px-6 py-20 md:py-24" style={{ background: "#F7FBFA" }}>
         <div className="max-w-5xl mx-auto">
           <Reveal>
             <h1 className="text-center text-3xl md:text-4xl font-extrabold mb-16" style={{ fontWeight: 800, color: DARK }}>
@@ -449,39 +483,6 @@ export default function Portfolio() {
               </Reveal>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* ---------------- experience ---------------- */}
-      <section id="experience" className="px-6 py-20" style={{ background: "#F7FBFA" }}>
-        <div className="max-w-3xl mx-auto">
-          <Reveal>
-            <h1 className="text-center text-3xl md:text-4xl font-extrabold mb-14" style={{ fontWeight: 800, color: DARK }}>
-              Experience
-            </h1>
-          </Reveal>
-          <div className="flex flex-col gap-8">
-            {EXPERIENCE.map((e, i) => (
-              <Reveal key={e.role} delay={i * 120}>
-                <div
-                  className="rounded-xl p-6 bg-white"
-                  style={{ boxShadow: "0 6px 24px rgba(2,170,176,0.08)", borderLeft: `4px solid ${TEAL}` }}
-                >
-                  <div className="flex flex-wrap items-baseline justify-between gap-2 mb-2">
-                    <h3 className="font-extrabold" style={{ color: DARK }}>{e.role}</h3>
-                    <span className="text-sm font-semibold" style={{ color: TEAL }}>{e.period}</span>
-                  </div>
-                  <p className="text-sm leading-relaxed" style={{ color: GREY }}>{e.desc}</p>
-                </div>
-              </Reveal>
-            ))}
-          </div>
-          <Reveal delay={200}>
-            <p className="text-center text-md pt-8" style={{ color: GREY }}>
-              <strong style={{ color: DARK }}>Education:</strong> Master of IT — Cybersecurity (WAM 79.2) ·
-              Bachelor of Commerce — Economics & Finance (WAM 81.7), The University of Melbourne
-            </p>
-          </Reveal>
         </div>
       </section>
 
