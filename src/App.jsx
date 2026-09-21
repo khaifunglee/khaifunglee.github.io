@@ -63,7 +63,7 @@ const EXPERIENCE = [
     {
     role: "Cybersecurity Intern — Centelon Solutions",
     period: "Aug 2026 - Present",
-    desc: "Investigated and triaged 200+ alerts per week in Microsoft Sentinel and Trend Micro Vision One as a Level 1 SOC Analyst",
+    desc: "Investigated and triaged 200+ alerts per week in Microsoft Sentinel and Trend Micro Vision One as a Level 1 SOC Analyst.",
   },
   {
     role: "Full Stack Developer Intern — Braver Ventures",
@@ -292,7 +292,7 @@ export default function Portfolio() {
           </Reveal>
           <Reveal delay={200}>
             <p className="mt-5 text-lg text-center mx-auto" style={{ color: GREY }}>
-              Master of IT (Cybersecurity) graduate in Melbourne — full-stack developer open to graduate roles.
+              Master of IT (Cybersecurity) graduate in Melbourne, open to graduate IT or full stack developer roles.
             </p>
           </Reveal>
           <Reveal delay={400}>
