@@ -31,8 +31,8 @@ const PROJECTS = [
     desc:
       "Track your pantry with automatic expiry labelling, match recipes to what you already own, and see how much you've saved. REST APIs on Spring Boot with PostgreSQL and Gmail SMTP authentication; Expo navigation makes every page accessible within 2 clicks.",
     stack: ["React Native", "Expo", "Spring Boot", "PostgreSQL"],
-    live: "#", // placeholder — swap in demo URL when deployed
-    livePlaceholder: true,
+    live: "https://apps.apple.com/us/app/make-a-dishcision/id6796202066", // placeholder — swap in demo URL when deployed
+    livePlaceholder: false,
     code: "https://github.com/khaifunglee/Dishcision",
     video: dishcisionDemo,
   },
