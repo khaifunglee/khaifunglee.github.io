@@ -29,9 +29,9 @@ const PROJECTS = [
     name: "Dishcision",
     meta: "Pantry Tracker & Recipe Matcher · Mobile App",
     desc:
-      "Track your pantry with automatic expiry labelling, match recipes to what you already own, and see how much you've saved. REST APIs on Spring Boot with PostgreSQL and Gmail SMTP authentication; Expo navigation makes every page accessible within 2 clicks.",
+      "A pantry tracker with automatic expiry labelling that also acts as a recipe suggestor that matches with what you have in your pantry.",
     stack: ["React Native", "Expo", "Spring Boot", "PostgreSQL"],
-    live: "https://apps.apple.com/us/app/make-a-dishcision/id6796202066", // placeholder — swap in demo URL when deployed
+    live: "https://apps.apple.com/us/app/make-a-dishcision/id6796202066",
     livePlaceholder: false,
     code: "https://github.com/khaifunglee/Dishcision",
     video: dishcisionDemo,
@@ -40,7 +40,7 @@ const PROJECTS = [
     name: "Therapeutic Mental Health Tool",
     meta: "Braver Ventures · Tech Lead, team of 5",
     desc:
-      "A clinician platform for assigning personalised exercises and reviewing client journals with calendar integration (Google & Outlook) and AI-powered client insights. Showcased at the Endeavour Exhibition.",
+      "A clinician platform for assigning personalised exercises and reviewing client journals with calendar integration and AI-powered client insights.",
     stack: ["React", "Spring Boot", "MySQL", "AWS", "LLM APIs"],
     live: null,
     code: "#",
@@ -51,8 +51,8 @@ const PROJECTS = [
     name: "Self-hosted Mini-SIEM",
     meta: "Security Monitoring · Personal Project",
     desc:
-      "A Dockerised ELK pipeline (Filebeat → Logstash → Elasticsearch → Kibana) that parses 3 log formats with custom grok patterns and visualises security events across 10+ chart types, backed by 7 detection rules for manual investigation workflows.",
-    stack: ["Filebeat", "Elastic Stack", "Docker", "Bash", "Linux"],
+      "A Dockerised ELK pipeline that parses 3 log formats with custom grok patterns and visualises security events across 10+ chart types.",
+    stack: ["Filebeat", "ELK Stack", "Docker", "Bash", "Linux"],
     live: null,
     code: "https://github.com/khaifunglee/mini-SIEM",
     img: miniSIEM,
@@ -61,17 +61,17 @@ const PROJECTS = [
 
 const EXPERIENCE = [
     {
-    role: "Cybersecurity Intern — Centelon Solutions",
-    period: "Aug 2026 - Present",
+    role: "Cybersecurity Intern at Centelon Solutions",
+    period: "Aug 2026 - Oct 2026",
     desc: "Investigated and triaged 200+ alerts per week in Microsoft Sentinel and Trend Micro Vision One as a Level 1 SOC Analyst.",
   },
   {
-    role: "Full Stack Developer Intern — Braver Ventures",
+    role: "Full Stack Developer Intern at Braver Ventures",
     period: "Jul – Nov 2025",
     desc: "Tech Lead in a team of 5; built and deployed a full-stack mental health platform on React, Spring Boot and AWS.",
   },
   {
-    role: "Consultant Intern — Amplifon",
+    role: "Consultant Intern at Amplifon",
     period: "Mar – Jun 2025",
     desc: "Delivered 6 strategic recommendations; identified 3 digital outreach channels and a roadmap to 1.4M eligible clients via Python web scraping and Excel analysis.",
   },
@@ -272,7 +272,7 @@ export default function Portfolio() {
           <Reveal>
             <h1
               className="font-extrabold leading-tight text-center"
-              style={{ fontSize: "clamp(2.2rem, 4.5vw, 6rem)", fontWeight: 800, color: DARK }}
+              style={{ fontSize: "clamp(2.2rem, 4vw, 6rem)", fontWeight: 800, color: DARK }}
             >
               Hi, my name is{" "}
               <span
@@ -292,7 +292,7 @@ export default function Portfolio() {
           </Reveal>
           <Reveal delay={200}>
             <p className="mt-5 text-lg text-center mx-auto" style={{ color: GREY }}>
-              Master of IT (Cybersecurity) graduate in Melbourne, open to graduate IT or full stack developer roles.
+              Master of IT (Cybersecurity) graduate in Melbourne, open to graduate IT/full stack developer roles.
             </p>
           </Reveal>
           <Reveal delay={400}>
@@ -330,15 +330,15 @@ export default function Portfolio() {
             <Reveal className="md:col-span-3" delay={250}>
               <div className="text-white">
                 <p className="leading-relaxed pb-6 text-left" style={{ fontSize: "1.1rem" }}>
-                  I'm a Master of IT graduate from the University of Melbourne,
+                  I'm an aspiring software developer with a Master of IT degree,
                   specialising in cybersecurity. From developing a
                   clinician-facing platform as Tech Lead to building my own SIEM pipeline
                   and reproducing real vulnerabilities, I have hands-on experience across full-stack
-                  development, cybersecurity, and consulting. 
+                  development and cybersecurity. 
                 </p>
                 <p className="leading-relaxed pb-6 text-left" style={{ fontSize: "1.1rem", opacity: 0.92 }}>
                   Backed by a Bachelor of Commerce (Economics & Finance), I bring commercial
-                  thinking to technical work. Google Cybersecurity certified; Currently building hobby-driven projects such as a Pokemon Binder Designer mobile app.
+                  thinking to technical work. Currently taking the CompTIA Security+ and building hobby-driven projects such as a Pokemon Binder Designer mobile app.
                 </p>
                 <div className="flex flex-wrap gap-1.5 mb-8">
                   {SKILLS.map((s) => (
@@ -490,11 +490,7 @@ export default function Portfolio() {
       <section id="contact" className="px-6 py-24 text-center" style={{ background: GRAD }}>
         <Reveal>
           <h1 className="text-3xl md:text-4xl font-extrabold text-white mb-4" style={{ fontWeight: 800 }}>Contact Me</h1>
-          <p className="text-white text-lg pb-8" style={{ opacity: 0.9 }}>
-            Looking for a graduate engineer who thinks about security from day one?
-            <br className="hidden md:block" /> Let's talk.
-          </p>
-          <WhiteButton href="mailto:leekhaifung@gmail.com">Let's Talk!</WhiteButton>
+          <WhiteButton href="mailto:leekhaifung@gmail.com">Let's Connect!</WhiteButton>
         </Reveal>
       </section>
 
@@ -524,7 +520,7 @@ export default function Portfolio() {
           </a>
         </div>
         <p className="text-xs" style={{ color: "#8a8a8a" }}>
-          © Khai Fung Lee · Melbourne, Australia
+          © Khai Fung Lee 2026 · Melbourne, Australia
         </p>
       </footer>
     </div>
