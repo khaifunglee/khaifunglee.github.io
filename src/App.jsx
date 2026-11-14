@@ -6,7 +6,7 @@ import profilePic from "./assets/profPic.jpg"
 import miniSIEM from "./assets/project-miniSIEMdashboard.png"
 import bvDemo from "./assets/project-bv-demo.mov"
 import dishcisionDemo from "./assets/project-dishcision-demo.MP4"
-import cv from "./assets/cvSep2026.pdf"
+import cv from "./assets/cvNov2026.pdf"
 
 // ---------------------------------------------------------------
 // Lee Khai Fung — Portfolio v2 (Simplefolio-inspired)
