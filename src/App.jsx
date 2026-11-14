@@ -62,13 +62,13 @@ const PROJECTS = [
 const EXPERIENCE = [
     {
     role: "Cybersecurity Intern at Centelon Solutions",
-    period: "Aug 2026 - Oct 2026",
+    period: "Aug 2026 - Present",
     desc: "Investigated and triaged 200+ alerts per week in Microsoft Sentinel and Trend Micro Vision One as a Level 1 SOC Analyst.",
   },
   {
     role: "Full Stack Developer Intern at Braver Ventures",
-    period: "Jul – Nov 2025",
-    desc: "Tech Lead in a team of 5; built and deployed a full-stack mental health platform on React, Spring Boot and AWS.",
+    period: "Jan – Dec 2025",
+    desc: "Tech Lead in a team of 5; built a full-stack mental health platform on React and Spring Boot and deployed it onto AWS.",
   },
   {
     role: "Consultant Intern at Amplifon",
