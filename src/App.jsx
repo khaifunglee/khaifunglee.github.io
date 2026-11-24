@@ -62,25 +62,20 @@ const PROJECTS = [
 const EXPERIENCE = [
     {
     role: "Cybersecurity Intern at Centelon Solutions",
-    period: "Aug 2026 - Present",
+    period: "Aug - Oct 2026",
     desc: "Investigated and triaged 200+ alerts per week in Microsoft Sentinel and Trend Micro Vision One as a Level 1 SOC Analyst.",
   },
   {
-    role: "Full Stack Developer Intern at Braver Ventures",
+    role: "Full Stack Developer at Braver Ventures",
     period: "Jan – Dec 2025",
     desc: "Tech Lead in a team of 5; built a full-stack mental health platform on React and Spring Boot and deployed it onto AWS.",
-  },
-  {
-    role: "Consultant Intern at Amplifon",
-    period: "Mar – Jun 2025",
-    desc: "Delivered 6 strategic recommendations; identified 3 digital outreach channels and a roadmap to 1.4M eligible clients via Python web scraping and Excel analysis.",
-  },
+  }
 ];
 
 const SKILLS = [
   "Java", "JavaScript", "TypeScript", "Python", "SQL", "KQL", "React", "React Native",
   "Spring Boot", "Microsoft Sentinel", "Trend Micro Vision One", "AWS", "Docker", "MySQL", 
-  "PostgreSQL", "ELK Stack", "Linux", "Git",
+  "PostgreSQL", "ELK Stack", "Linux", "Agentic Coding",
 ];
 
 // ------------------------- animations ---------------------------
@@ -292,7 +287,7 @@ export default function Portfolio() {
           </Reveal>
           <Reveal delay={200}>
             <p className="mt-5 text-lg text-center mx-auto" style={{ color: GREY }}>
-              Master of IT (Cybersecurity) graduate in Melbourne, open to graduate IT/full stack developer roles.
+              Master of IT (Cybersecurity) graduate in Melbourne, open to junior and associate roles.
             </p>
           </Reveal>
           <Reveal delay={400}>
@@ -330,8 +325,8 @@ export default function Portfolio() {
             <Reveal className="md:col-span-3" delay={250}>
               <div className="text-white">
                 <p className="leading-relaxed pb-6 text-left" style={{ fontSize: "1.1rem" }}>
-                  I'm an aspiring software developer with a Master of IT degree,
-                  specialising in cybersecurity. From developing a
+                  I'm a Master of IT graduate,
+                  specialising in cybersecurity with a strong passion for building software that makes a meaningful impact. From developing a
                   clinician-facing platform as Tech Lead to building my own SIEM pipeline
                   and reproducing real vulnerabilities, I have hands-on experience across full-stack
                   development and cybersecurity. 
@@ -361,6 +356,12 @@ export default function Portfolio() {
       {/* ---------------- experience ---------------- */}
       <section id="experience" className="px-6 py-20" style={{ background: "#F7FBFA" }}>
         <div className="max-w-3xl mx-auto">
+        <Reveal delay={200}>
+            <p className="text-center text-md pt-8" style={{ color: GREY }}>
+              <strong style={{ color: DARK }}>Education:</strong> Master of IT — Cybersecurity (WAM 79.2) ·
+              Bachelor of Commerce — Economics & Finance (WAM 81.7), The University of Melbourne
+            </p>
+          </Reveal>
           <Reveal>
             <h1 className="text-center text-3xl md:text-4xl font-extrabold mb-14" style={{ fontWeight: 800, color: DARK }}>
               Experience
@@ -382,12 +383,6 @@ export default function Portfolio() {
               </Reveal>
             ))}
           </div>
-          <Reveal delay={200}>
-            <p className="text-center text-md pt-8" style={{ color: GREY }}>
-              <strong style={{ color: DARK }}>Education:</strong> Master of IT — Cybersecurity (WAM 79.2) ·
-              Bachelor of Commerce — Economics & Finance (WAM 81.7), The University of Melbourne
-            </p>
-          </Reveal>
         </div>
       </section>
 
